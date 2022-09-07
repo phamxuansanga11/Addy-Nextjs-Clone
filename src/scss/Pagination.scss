@@ -1,0 +1,86 @@
+.paginations {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  .pagination__list {
+    display: flex;
+    margin-bottom: 0;
+    .pagination__list-option {
+      border: none;
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline: 1px solid #000;
+      width: 40px;
+      height: 40px;
+      &.unhover {
+        // outline: none;
+        border: none;
+        &:hover {
+          background-color: initial;
+          color: #ccc;
+          cursor: initial;
+        }
+      }
+      &:hover {
+        background-color: #10213d;
+        color: #fff;
+      }
+      &.active {
+        background-color: #10213d;
+        color: #fff;
+      }
+      > span {
+        padding-bottom: 2px;
+      }
+    }
+    .--btn__controll {
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline: 1px solid #000;
+      width: 40px;
+      height: 40px;
+      &.disables {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+      &:hover {
+        background-color: #10213d;
+        color: #fff;
+      }
+      &.active {
+        background-color: #10213d;
+        color: #fff;
+      }
+      > span {
+        padding-bottom: 2px;
+      }
+    }
+    .--prev__btn {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+    .--next__btn {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+}
+
+@media screen and(max-width: 576px) {
+  .paginations .pagination__list {
+    .pagination__list-option {
+      width: 35px;
+      height: 35px;
+    }
+    .--btn__controll {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}

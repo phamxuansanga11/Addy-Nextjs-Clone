@@ -1,0 +1,85 @@
+//add fonts family
+@import "./styles/fonts.scss";
+
+//import scss files
+@import "../src/scss/Reset.scss";
+@import "../src/scss/Header.scss";
+@import "../src/scss/Footer.scss";
+@import "../src/scss/AddyCrm.scss";
+@import "../src/scss/Characteristics.scss";
+@import "../src/scss/Features.scss";
+@import "../src/scss/UseSolution.scss";
+@import "../src/scss/Slider.scss";
+@import "../src/scss/ContactForm.scss";
+@import "../src/scss/Faq.scss";
+@import "../src/scss/Contact.scss";
+@import "../src/scss/Services.scss";
+@import "../src/scss/NewPost.scss";
+@import "../src/scss/HightlightsCare.scss";
+@import "../src/scss/Search.scss";
+@import "../src/scss/VideoSupport.scss";
+@import "../src/scss/Introduce.scss";
+@import "../src/scss/VisionAndMission.scss";
+@import "../src/scss/SupportChannel.scss";
+@import "../src/scss/GridItem.scss";
+@import "../src/scss/ContentSearch.scss";
+@import "../src/scss/PopupVideoDocPage.scss";
+@import "../src/scss/SearchDetalPostPage.scss";
+@import "../src/scss/MenuMobile.scss";
+@import "../src/scss/TabContent.scss";
+@import "../src/scss/SideBarRight.scss";
+@import "../src/scss/Pagination.scss";
+@import "../src/scss/Loading.scss";
+@import "../src/scss/customScrollBar.scss";
+@import "../src/scss/Alert.scss";
+@import "../src/scss/WorkSpaceRegister.scss";
+@import "../src/scss/RegisterConfirm.scss";
+@import "../src/scss/RegisterSuccess.scss";
+@import "../src/scss/RegisterPassword.scss";
+@import "../src/scss/Login.scss";
+@import "../src/scss/Price.scss";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #f9f9f9 !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+i {
+  img {
+    width: auto;
+  }
+}
+
+.main__search-detail-page {
+  background-color: #f9f9f9;
+}
+.search__detail-post__grid-left {
+  img {
+    width: 100% !important;
+  }
+}
+
+@media screen and(min-width: 1200px) {
+  .container {
+    max-width: 1199px !important;
+  }
+}
+
+@media screen and(max-width: 440px) {
+  h2 {
+    font-size: 22px !important;
+  }
+}

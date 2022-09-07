@@ -1,0 +1,125 @@
+.section-login {
+  padding-top: 41px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../public/img/register-bg.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 50%;
+  .container {
+    .logo {
+      margin-bottom: 50px;
+      display: flex;
+      justify-content: center;
+      > a {
+        > img {
+          width: 170px;
+        }
+      }
+    }
+    .form__login {
+      background: #ffffff;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+      border-radius: 16px;
+      padding: 20px 20px;
+      margin-bottom: 30px;
+      max-width: 644px;
+      max-height: 416px;
+      margin: auto;
+      form {
+        &::after {
+          content: "";
+          display: block;
+          background-color: #ccc;
+          width: 100%;
+          height: 1px;
+          margin-top: 30px;
+        }
+        > h2 {
+          font-size: 30px;
+          font-family: br;
+          line-height: normal;
+          color: #1d1d1d;
+          text-transform: none;
+          font-weight: 500;
+          text-align: center;
+          margin-bottom: 23px;
+        }
+        .form__group {
+          margin-bottom: 20px;
+          label {
+            width: 100%;
+            display: block;
+            margin-bottom: 6px;
+            font-size: 16px;
+            font-family: br;
+            line-height: 24px;
+            color: #282828;
+            text-transform: none;
+            span {
+              color: red;
+            }
+          }
+          input {
+            outline: none;
+            width: 100%;
+            display: block;
+            border: 1px solid #828282;
+            box-sizing: border-box;
+            border-radius: 4px;
+            padding: 10px 8px;
+            font-size: 14px;
+          }
+        }
+        .btn__next-step {
+          margin-top: 30px;
+          .next-step {
+            outline: none;
+            border: none;
+            width: 100%;
+            font-size: 16px;
+            font-family: bb;
+            line-height: 24px;
+            color: #282828;
+            text-transform: none;
+            display: block;
+            text-align: center;
+            border-radius: 12px;
+            font-weight: 500;
+            background-color: #ff9900;
+            padding: 12px 24px;
+            transition: 0.3s;
+            &.isDisable {
+              pointer-events: none;
+              opacity: 0.5;
+            }
+            &:hover {
+              transition: 0.3s;
+              background-color: #170a4b;
+              color: #fff !important;
+            }
+          }
+        }
+      }
+      .register__btn-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        > p {
+          margin-right: 6px;
+        }
+        .btn__to-register {
+          display: flex;
+          justify-content: center;
+          text-decoration: underline;
+          font-weight: 600;
+          text-decoration: underline;
+          &:hover {
+            text-decoration: underline !important;
+          }
+        }
+      }
+    }
+  }
+}

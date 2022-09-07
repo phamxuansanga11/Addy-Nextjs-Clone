@@ -1,0 +1,37 @@
+.vision-and-mission {
+  margin-top: 60px;
+  .container {
+    .title {
+      font-size: 32px;
+      font-family: br;
+      line-height: normal;
+      color: #1d1d1d;
+      text-transform: none;
+      text-align: center;
+      margin-bottom: 50px;
+      position: relative;
+    }
+    .vision-and-mission__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+      .grid__item {
+        img {
+          width: 112px;
+        }
+        p {
+          font-size: 16px;
+          font-family: br;
+          line-height: normal;
+          color: #282828;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 768px) {
+  .vision-and-mission .container .vision-and-mission__grid {
+    grid-template-columns: 1fr;
+  }
+}

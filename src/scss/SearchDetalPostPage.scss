@@ -1,0 +1,162 @@
+.section__search-detail-post {
+  margin-top: 80px;
+  margin-bottom: 60px;
+  padding-top: 20px;
+  .container {
+    .btn__backtodocument {
+      margin-bottom: 10px;
+      display: flex;
+      a {
+        color: #ff9900 !important;
+        &:hover {
+          text-decoration: underline !important;
+        }
+      }
+      > span {
+        margin: 0 10px;
+      }
+    }
+    .search__detail-post__grid {
+      display: grid;
+      grid-template-columns: 8fr 4fr;
+      gap: 30px;
+      .search__detail-post__grid-left {
+        .item__detail {
+          .title {
+            margin-bottom: 0;
+            font-size: 32px;
+            font-family: br;
+            line-height: 42px;
+            color: #1d1d1d;
+            text-transform: none;
+            font-weight: 600;
+          }
+          .date-and-view {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            .--icon {
+              display: flex;
+              i {
+                display: flex;
+                img {
+                  width: 18px;
+                }
+              }
+              span {
+                margin-left: 6px;
+                font-size: 13px;
+                font-family: br;
+                color: #55555a;
+              }
+            }
+            .view {
+              margin-left: 15px;
+            }
+          }
+          .params__content {
+            margin-bottom: 20px;
+            > p {
+              font-size: 14px;
+              font-family: br;
+              line-height: 28px;
+              color: #282828;
+            }
+          }
+          .img__content {
+            margin-bottom: 15px;
+            .caption__img {
+              font-size: 13px;
+              font-family: br;
+              line-height: 28px;
+              color: #282828;
+              text-transform: none;
+              font-style: italic;
+              margin-top: 6px;
+              text-align: center;
+            }
+          }
+          .text__content {
+            .text__content-item {
+              .text__content-item__title {
+                font-size: 16px;
+                font-family: br;
+                line-height: 24px;
+                color: #000;
+                display: flex;
+                > p {
+                  font-size: 14px;
+                  font-family: br;
+                  line-height: 28px;
+                  color: #282828;
+                  text-transform: none;
+                  font-weight: 600;
+                  margin-left: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .search__detail-post__grid-right {
+        .blog__interested {
+          .blog__interested-content {
+            .blog__interested-content-item {
+              font-size: 16px;
+              font-family: br;
+              line-height: 25px;
+              color: #1d1d1d;
+              &:hover {
+                text-decoration: underline !important;
+                color: #ff9900 !important;
+              }
+            }
+          }
+        }
+        .new__blog {
+          .new__blog-item {
+            margin-bottom: 15px;
+            > a {
+              display: flex;
+              img {
+                width: 130px;
+              }
+              p {
+                margin-left: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 993px) {
+  .section__search-detail-post .container .search__detail-post__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and(max-width: 768px) {
+  .section__search-detail-post
+    .container
+    .search__detail-post__grid
+    .search__detail-post__grid-left
+    .item__detail
+    .title {
+    font-size: 27px;
+  }
+}
+
+@media screen and(max-width: 440px) {
+  .section__search-detail-post
+    .container
+    .search__detail-post__grid
+    .search__detail-post__grid-left
+    .item__detail
+    .title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}

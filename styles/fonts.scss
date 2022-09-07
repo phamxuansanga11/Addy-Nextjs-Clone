@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "bm";
+  src: url("../public/fonts/fontsBeVietNamPro/BeVietnamPro-Medium.woff2")
+      format("woff2"),
+    url("../public/fonts/fontsBeVietNamPro/BeVietnamPro-Medium.woff")
+      format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "br";
+  src: url("../public/fonts/fontsBeVietNamPro/BeVietnamPro-Regular.woff2")
+      format("woff2"),
+    url("../public/fonts/fontsBeVietNamPro/BeVietnamPro-Regular.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "bb";
+  src: url("../public/fonts/fontsBeVietNamPro/BeVietnamPro-Bold.woff")
+      format("woff2"),
+    url("../public/fonts/fontsBeVietNamPro/BeVietnamPro-Bold.woff2")
+      format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "bl";
+  src: url("../public/fonts/fontsBeVietNamPro/BeVietnamPro-Light.woff2")
+      format("woff2"),
+    url("../public/fonts/fontsBeVietNamPro/BeVietnamPro-Light.woff")
+      format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: fallback;
+}

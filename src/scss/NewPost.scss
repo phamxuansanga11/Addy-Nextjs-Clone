@@ -1,0 +1,160 @@
+.section__newpost {
+  margin-top: 60px;
+  .container {
+    .new__post {
+      .new__post-title {
+        h2 {
+          user-select: none;
+          font-size: 32px;
+          font-family: br;
+          line-height: normal;
+          color: #1d1d1d;
+          text-transform: none;
+          position: relative;
+          font-weight: 500;
+          padding-left: 20px;
+          margin-bottom: 30px;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 5px;
+            height: 100%;
+            background-color: #ff9900;
+          }
+        }
+      }
+      .new__post-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        .grid__right {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 30px;
+          .grid__item {
+            &:nth-child(1) {
+              grid-column: 1/3;
+            }
+          }
+        }
+        .--grid {
+          .grid__item {
+            position: relative;
+            height: 100%;
+            > img {
+              width: 100%;
+              height: 100%;
+            }
+            .grid__item-text {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+            }
+          }
+          .grid__item {
+            overflow: hidden;
+            &::after {
+              content: "";
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              background-color: rgba(0, 0, 0, 0.171);
+              z-index: 10;
+              pointer-events: none;
+              user-select: none;
+            }
+            &:hover {
+              > img {
+                transition: 0.2s;
+                transform: scale(1.1);
+              }
+            }
+            > img {
+              transition: 0.2s;
+              transform: scale(1);
+            }
+            .grid__item-text {
+              padding: 10px 15px;
+              .title {
+                font-size: 17px;
+                font-family: br;
+                line-height: 24px;
+                color: #fff;
+                text-transform: none;
+                display: -webkit-inline-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                transition: 0.3s;
+              }
+              .time {
+                display: flex;
+                .time__icon {
+                  display: flex;
+                  i {
+                    margin-right: 10px;
+                  }
+                  > span {
+                    display: flex;
+                    align-items: center;
+                    font-size: 12px;
+                    font-family: br;
+                    line-height: 24px;
+                    color: #fff;
+                    text-transform: none;
+                  }
+                }
+
+                .dot {
+                  margin: 0 3px;
+                }
+                > span {
+                  display: flex;
+                  align-items: center;
+                  font-size: 12px;
+                  font-family: br;
+                  line-height: 24px;
+                  color: #fff;
+                  text-transform: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 993px) {
+  .section__newpost .container .new__post .new__post-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and(max-width: 447px) {
+  .section__newpost .container .new__post .new__post-title h2 {
+    font-size: 28px;
+  }
+  .section__hightlights-care
+    .container
+    .hightlights__care
+    .wrapper__grid
+    .wrapper__grid-left
+    h2 {
+    font-size: 28px;
+  }
+  .section__newpost .container .new__post .new__post-grid .grid__right {
+    grid-template-columns: 1fr;
+    .grid__item {
+      &:nth-child(1) {
+        grid-column: auto;
+      }
+    }
+  }
+}
